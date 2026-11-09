@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@source "..";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Custom Color Tokens aligned with original brand design */
+  --color-brand-primary: #0f766e;
+  --color-brand-primary-dark: #115e59;
+  --color-brand-accent: #34d399;
+  --color-brand-accent-light: #4ade80;
+  --color-brand-dark: #172b26;
+  --color-brand-surface: #eaf5ef;
+
+  /* Keyframe Animations */
+  --animate-marquee: marquee-slide 28s linear infinite;
+  --animate-orb-1: floatGlassOrb1 20s ease-in-out infinite alternate;
+  --animate-orb-2: floatGlassOrb2 25s ease-in-out infinite alternate;
+
+  @keyframes marquee-slide {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes floatGlassOrb1 {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(60px, 40px) scale(1.12); }
+    100% { transform: translate(-40px, 70px) scale(0.95); }
+  }
+
+  @keyframes floatGlassOrb2 {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-50px, -40px) scale(1.1); }
+    100% { transform: translate(40px, -60px) scale(0.92); }
+  }
+}
+
+/* Ambient Glassy Background & Orbs */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-dark);
+  background-color: var(--color-brand-surface);
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(52, 211, 153, 0.40) 0%, transparent 42%),
+    radial-gradient(circle at 85% 18%, rgba(15, 118, 110, 0.32) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(167, 243, 208, 0.45) 0%, transparent 50%),
+    radial-gradient(circle at 12% 85%, rgba(20, 184, 166, 0.35) 0%, transparent 46%),
+    radial-gradient(circle at 88% 85%, rgba(5, 150, 105, 0.28) 0%, transparent 48%),
+    linear-gradient(135deg, #f0f9f4 0%, #e6f4ec 50%, #edf8f2 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+body::before {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, #34d399 0%, rgba(52, 211, 153, 0) 70%);
+  top: -120px;
+  left: -120px;
+  animation: var(--animate-orb-1);
+}
+
+body::after {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #0f766e 0%, rgba(15, 118, 110, 0) 70%);
+  bottom: 5%;
+  right: -120px;
+  animation: var(--animate-orb-2);
+}
+
+/* Interactivity & DOM State Helper Hooks */
+#navbar-menu.is-open {
+  display: flex !important;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#menu-overlay.is-active {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+#checkout-modal.is-active {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Detail Page Dynamic State Hooks */
+.gallery-thumb-btn.is-active {
+  border-color: var(--color-brand-primary) !important;
+  box-shadow: 0 0 0 2px var(--color-brand-primary) !important;
+  opacity: 1 !important;
+}
+
+.size-btn.active {
+  background-color: var(--color-brand-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--color-brand-primary) !important;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.25) !important;
+}
+
+.star-pick.active {
+  color: #f59e0b !important;
+}
+
+/* Toast Notification Animation */
+.toast-notification {
+  animation: toastFadeIn 0.35s ease-out forwards;
+}
+
+@keyframes toastFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

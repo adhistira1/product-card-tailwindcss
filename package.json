@@ -1,0 +1,14 @@
+{
+  "name": "product-card-tailwindcss",
+  "version": "1.0.0",
+  "description": "Toko Urban / Budarpa Store with Tailwind CSS v4.3",
+  "scripts": {
+    "start": "node server.js",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

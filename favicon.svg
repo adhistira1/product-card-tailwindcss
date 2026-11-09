@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="60%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+  <!-- Subtle Top Highlight -->
+  <path d="M4 18 C4 9 10 4 19 4 L45 4 C54 4 60 9 60 18 L60 26 C45 22 19 22 4 26 Z" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Shopping Bag Handle -->
+  <path d="M24 20 C24 14 40 14 40 20" fill="none" stroke="url(#markGrad)" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Shopping Bag Body with Dynamic Geometric Lines -->
+  <path d="M16 22 L48 22 C49.5 22 50.8 23.3 50.5 24.8 L47 48 C46.6 50.3 44.6 52 42.3 52 L21.7 52 C19.4 52 17.4 50.3 17 48 L13.5 24.8 C13.2 23.3 14.5 22 16 22 Z" fill="none" stroke="url(#markGrad)" stroke-width="4.5" stroke-linejoin="round"/>
+
+  <!-- Urban Letter 'U' in Center of Bag -->
+  <path d="M26 30 L26 39 C26 42.5 38 42.5 38 39 L38 30" fill="none" stroke="url(#markGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Vibrant Accent Spark / Star (Top Right) -->
+  <path d="M50 10 L51.5 14 L55.5 15.5 L51.5 17 L50 21 L48.5 17 L44.5 15.5 L48.5 14 Z" fill="url(#sparkGrad)"/>
+</svg>
+

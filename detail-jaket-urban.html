@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Jaket Windbreaker Urban | BUDARPA STORE</title>
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="images/favicon-192.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body class="font-sans text-teal-950 antialiased min-h-screen relative overflow-x-hidden selection:bg-teal-200 selection:text-teal-900">
+  <!-- Running Text / Teks Pengumuman Bergerak -->
+  <div class="marquee-bar bg-gradient-to-r from-teal-800 via-teal-900 to-teal-800 text-white text-xs font-bold py-2.5 overflow-hidden whitespace-nowrap shadow-sm border-b border-teal-700/50">
+    <div class="marquee-track inline-flex items-center gap-8 whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+      <span class="marquee-item inline-flex items-center gap-2 text-emerald-300 font-semibold tracking-wide">
+        <svg class="marquee-icon w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 23c4.97 0 9-4.03 9-9 0-3.6-2.12-6.7-5.18-8.15-.36-.17-.79.03-.89.41-.33 1.25-.97 2.37-1.85 3.25-.2.2-.53.11-.6-.17-.55-2.2-1.99-4.22-3.83-5.32-.34-.2-.77.02-.82.41-.32 2.35-1.57 4.38-3.32 5.67C3.59 11.51 3 13.68 3 16c0 4.97 4.03 9 9 9z" />
+        </svg>
+        <span class="text-white">PROMO SPESIAL BULAN INI: DISKON HINGGA 30% UNTUK KOLEKSI URBAN</span>
+      </span>
+      <span class="marquee-divider text-emerald-400 font-black">•</span>
+      <span class="marquee-item inline-flex items-center gap-2 text-emerald-300 font-semibold tracking-wide">
+        <svg class="marquee-icon w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="3" width="15" height="13"></rect>
+          <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+          <circle cx="5.5" cy="18.5" r="2.5"></circle>
+          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+        </svg>
+        <span class="text-white">GRATIS ONGKIR KE SELURUH INDONESIA DENGAN MINIMAL BELANJA RP 150.000</span>
+      </span>
+      <span class="marquee-divider text-emerald-400 font-black">•</span>
+      <span class="marquee-item inline-flex items-center gap-2 text-emerald-300 font-semibold tracking-wide">
+        <svg class="marquee-icon w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+        <span class="text-white">100% PRODUK ORIGINAL &amp; BERGARANSI TUKAR 30 HARI</span>
+      </span>
+      <span class="marquee-divider text-emerald-400 font-black">•</span>
+    </div>
+  </div>
+
+  <!-- Header & Navbar -->
+  <header class="site-header sticky top-0 z-40 backdrop-blur-md bg-white/80 border-b border-teal-900/10 transition-all duration-300 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+      <a href="index.html" class="brand-logo text-xl sm:text-2xl font-black tracking-tight text-teal-900 hover:text-teal-700 transition-colors flex items-center gap-2">
+        <span class="w-8 h-8 rounded-xl bg-gradient-to-tr from-teal-700 to-emerald-400 flex items-center justify-center text-white shadow-sm font-black text-sm">B</span>
+        BUDARPA STORE
+      </a>
+
+      <!-- Tombol Hamburger (Layar HP/Tablet) -->
+      <button class="hamburger-btn md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-xl border border-teal-200 bg-white/70 hover:bg-white text-teal-900 cursor-pointer transition-colors" id="hamburger-btn" type="button" aria-label="Buka Menu" aria-expanded="false">
+        <span class="hamburger-line w-5 h-0.5 bg-teal-900 rounded-full transition-all"></span>
+        <span class="hamburger-line w-5 h-0.5 bg-teal-900 rounded-full transition-all"></span>
+        <span class="hamburger-line w-5 h-0.5 bg-teal-900 rounded-full transition-all"></span>
+      </button>
+
+      <div class="menu-overlay fixed inset-0 bg-black/40 backdrop-blur-xs z-40 hidden" id="menu-overlay"></div>
+
+      <nav class="navbar hidden md:flex items-center gap-6" id="navbar-menu">
+        <div class="nav-right flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full md:w-auto">
+          <ul class="nav-links flex flex-col md:flex-row items-stretch md:items-center gap-1 md:gap-1.5 font-semibold text-sm text-gray-700">
+            <li><a href="index.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Home</a></li>
+            <li><a href="index.html#produk" class="block px-3.5 py-2 rounded-xl text-teal-800 bg-teal-50 font-bold transition-colors">Produk</a></li>
+            <li><a href="tentang-kami.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Tentang Kami</a></li>
+            <li><a href="cara-belanja.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Cara Belanja</a></li>
+            <li><a href="faq.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">FAQ</a></li>
+            <li><a href="kontak.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Kontak</a></li>
+          </ul>
+
+          <a href="keranjang.html" class="cart-btn inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-md transition-all cursor-pointer" id="cart-btn" aria-label="Keranjang Belanja">
+            <svg class="cart-icon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-text">Keranjang</span>
+            <span class="cart-badge bg-emerald-400 text-teal-950 font-black text-xs px-2 py-0.5 rounded-full min-w-5 text-center leading-none" id="cart-count">0</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12">
+    <!-- Tautan Kembali ke Katalog -->
+    <div class="breadcrumb">
+      <a href="index.html#produk" class="back-link inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-teal-700 hover:text-teal-900 transition-colors px-3 py-1.5 rounded-lg bg-teal-50/70 hover:bg-teal-100/70 border border-teal-100">
+        <svg class="back-arrow-icon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Kembali ke Katalog</span>
+      </a>
+    </div>
+
+    <!-- Kotak Detail Produk -->
+    <section class="product-detail-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-white/80 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-teal-100 shadow-sm">
+      <!-- Kolom Kiri: Galeri Slide Gambar Realistis -->
+      <div class="detail-gallery-box lg:col-span-6 space-y-4">
+        <div class="gallery-main-view relative aspect-square rounded-2xl overflow-hidden bg-teal-50/60 border border-teal-100 flex items-center justify-center p-6 group">
+          <button class="gallery-nav-btn prev absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 backdrop-blur-xs text-teal-900 border border-teal-100 shadow-md flex items-center justify-center hover:bg-white transition-all cursor-pointer z-10 opacity-80 group-hover:opacity-100" id="gallery-prev-btn" type="button" aria-label="Gambar Sebelumnya">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <img id="gallery-main-img" class="gallery-main-image w-full h-full object-contain transition-opacity duration-300" src="images/jaket-urban.jpg" alt="Jaket Windbreaker Urban - Tampak Depan" width="640" height="480" />
+          <button class="gallery-nav-btn next absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 backdrop-blur-xs text-teal-900 border border-teal-100 shadow-md flex items-center justify-center hover:bg-white transition-all cursor-pointer z-10 opacity-80 group-hover:opacity-100" id="gallery-next-btn" type="button" aria-label="Gambar Berikutnya">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="gallery-thumbs flex gap-3 overflow-x-auto pb-2" id="gallery-thumbs">
+          <button class="gallery-thumb-btn is-active w-20 h-20 rounded-xl overflow-hidden border-2 border-teal-600 bg-teal-50/50 p-1.5 transition-all cursor-pointer shrink-0" type="button" data-src="images/jaket-urban.jpg" aria-label="Lihat tampak depan">
+            <img class="gallery-thumb-img w-full h-full object-contain" src="images/jaket-urban.jpg" alt="Tampak Depan" />
+          </button>
+          <button class="gallery-thumb-btn w-20 h-20 rounded-xl overflow-hidden border-2 border-transparent bg-teal-50/50 p-1.5 transition-all cursor-pointer opacity-70 hover:opacity-100 shrink-0" type="button" data-src="images/jaket-detail-zipper.jpg" aria-label="Lihat detail resleting dan bahan">
+            <img class="gallery-thumb-img w-full h-full object-contain" src="images/jaket-detail-zipper.jpg" alt="Detail Resleting & Bahan" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Informasi Produk -->
+      <div class="detail-info-box lg:col-span-6 space-y-5">
+        <div>
+          <p class="product-category text-xs font-bold text-teal-600 uppercase tracking-wider">JAKET &amp; OUTERWEAR</p>
+          <h1 class="detail-title text-2xl sm:text-3xl font-black text-gray-900 mt-1">Jaket Windbreaker Urban</h1>
+          <p class="detail-price text-2xl sm:text-3xl font-black text-teal-800 mt-2">Rp279.000</p>
+        </div>
+
+        <p class="detail-description text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Jaket pelindung angin dan gerimis berdesain kasual minimalis dengan potongan modern. Dibuat menggunakan kain parasut taslan premium yang tahan air dan furing jaring (mesh) berongga yang adem, membuat tubuh tetap terlindungi dan nyaman beraktivitas di segala cuaca.
+        </p>
+
+        <!-- Daftar Keunggulan Produk -->
+        <div class="detail-features space-y-2.5 pt-3 border-t border-teal-100">
+          <h3 class="text-xs font-bold text-gray-700 uppercase tracking-wider">Keunggulan Produk:</h3>
+          <ul class="features-list grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            <li class="flex items-center gap-2 p-2.5 rounded-xl bg-teal-50/70 border border-teal-100/70 text-xs font-bold text-teal-900">
+              <svg class="feature-icon w-4 h-4 text-teal-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>Taslan anti angin</span>
+            </li>
+            <li class="flex items-center gap-2 p-2.5 rounded-xl bg-teal-50/70 border border-teal-100/70 text-xs font-bold text-teal-900">
+              <svg class="feature-icon w-4 h-4 text-teal-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>Furing jaring adem</span>
+            </li>
+            <li class="flex items-center gap-2 p-2.5 rounded-xl bg-teal-50/70 border border-teal-100/70 text-xs font-bold text-teal-900">
+              <svg class="feature-icon w-4 h-4 text-teal-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>Resleting rapat air</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pilihan Ukuran Jaket (Flexbox) -->
+        <div class="size-selector space-y-2 pt-2">
+          <p class="size-label text-xs font-bold text-gray-700 uppercase tracking-wider">Pilihan Ukuran:</p>
+          <div class="size-options flex flex-wrap gap-2.5">
+            <button class="size-btn active min-w-12 h-11 px-3 rounded-xl border border-teal-300 bg-teal-700 text-white font-bold text-sm cursor-pointer shadow-sm transition-all" type="button">S</button>
+            <button class="size-btn min-w-12 h-11 px-3 rounded-xl border border-teal-200 bg-white text-gray-700 font-bold text-sm hover:border-teal-400 hover:bg-teal-50/50 cursor-pointer transition-all" type="button">M</button>
+            <button class="size-btn min-w-12 h-11 px-3 rounded-xl border border-teal-200 bg-white text-gray-700 font-bold text-sm hover:border-teal-400 hover:bg-teal-50/50 cursor-pointer transition-all" type="button">L</button>
+            <button class="size-btn min-w-12 h-11 px-3 rounded-xl border border-teal-200 bg-white text-gray-700 font-bold text-sm hover:border-teal-400 hover:bg-teal-50/50 cursor-pointer transition-all" type="button">XL</button>
+          </div>
+        </div>
+
+        <!-- Tombol Utama Beli Sekarang -->
+        <button class="buy-now-button w-full py-4 px-6 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-black text-base shadow-lg hover:shadow-teal-700/25 hover:-translate-y-0.5 transition-all cursor-pointer flex items-center justify-center gap-2.5" type="button">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>Beli Sekarang</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Section FAQ Khusus Jaket Windbreaker Urban -->
+    <section class="faq-section space-y-6" id="faq">
+      <div class="text-center space-y-1">
+        <h2 class="section-title text-2xl font-extrabold text-teal-950 tracking-tight">Pertanyaan Seputar Jaket Windbreaker Urban</h2>
+        <p class="section-subtitle text-xs sm:text-sm text-teal-800/80">Jawaban akurat seputar bahan taslan, ketahanan cuaca, dan panduan ukuran jaket.</p>
+      </div>
+
+      <div class="faq-container max-w-3xl mx-auto space-y-3.5">
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer" open>
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm select-none list-none">
+            <span>Apakah jaket ini terasa gerah jika dipakai di siang hari?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Tidak! Bagian dalam jaket dilengkapi furing jaring (mesh) berpori mikro yang membantu sirkulasi udara tetap lancar, sehingga tidak menimbulkan efek sauna atau gerah saat dipakai di siang hari.
+          </p>
+        </details>
+
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm select-none list-none">
+            <span>Seberapa tahan jaket ini terhadap hujan?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Bahan parasut taslan memiliki lapisan water-repellent yang sangat efektif menahan gerimis ringan hingga hujan sedang saat berkendara. Untuk hujan deras berkepanjangan tetap disarankan menggunakan jas hujan khusus.
+          </p>
+        </details>
+
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm select-none list-none">
+            <span>Bagaimana cara mencuci jaket taslan agar awet?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Cukup kucek lembut dengan air dingin dan detergen cair. Jangan diperas dengan mesin cuci atau disikat kasar karena dapat merusak lapisan anti-airnya. Keringkan di tempat teduh.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Section Ulasan Pelanggan -->
+    <section class="reviews-section space-y-6" id="ulasan">
+      <div class="text-center space-y-1">
+        <h2 class="section-title text-2xl font-extrabold text-teal-950 tracking-tight">Ulasan Pelanggan</h2>
+        <p class="section-subtitle text-xs sm:text-sm text-teal-800/80">Dengarkan pengalaman langsung dari para pembeli terverifikasi Jaket Windbreaker Urban.</p>
+      </div>
+
+      <div class="reviews-summary-card grid grid-cols-1 md:grid-cols-3 gap-6 p-6 sm:p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-teal-100 shadow-sm items-center">
+        <div class="rating-big-box text-center space-y-1">
+          <div class="rating-big-num text-5xl font-black text-teal-800">4.9</div>
+          <div class="rating-big-stars text-amber-500 text-lg">★★★★★</div>
+          <div class="rating-big-count text-xs font-semibold text-gray-500">Berdasarkan 86 Ulasan</div>
+        </div>
+        <div class="rating-bars md:col-span-2 space-y-2 text-xs font-semibold text-gray-600">
+          <div class="rating-bar-row flex items-center gap-3">
+            <span class="w-16">5 Bintang</span>
+            <div class="rating-bar-track flex-1 h-2 rounded-full bg-teal-100 overflow-hidden"><div class="rating-bar-fill h-full bg-amber-400 rounded-full" style="width: 90%;"></div></div>
+            <span class="w-10 text-right">90%</span>
+          </div>
+          <div class="rating-bar-row flex items-center gap-3">
+            <span class="w-16">4 Bintang</span>
+            <div class="rating-bar-track flex-1 h-2 rounded-full bg-teal-100 overflow-hidden"><div class="rating-bar-fill h-full bg-amber-400 rounded-full" style="width: 8%;"></div></div>
+            <span class="w-10 text-right">8%</span>
+          </div>
+          <div class="rating-bar-row flex items-center gap-3">
+            <span class="w-16">3 Bintang</span>
+            <div class="rating-bar-track flex-1 h-2 rounded-full bg-teal-100 overflow-hidden"><div class="rating-bar-fill h-full bg-amber-400 rounded-full" style="width: 2%;"></div></div>
+            <span class="w-10 text-right">2%</span>
+          </div>
+          <div class="rating-bar-row flex items-center gap-3">
+            <span class="w-16">2 Bintang</span>
+            <div class="rating-bar-track flex-1 h-2 rounded-full bg-teal-100 overflow-hidden"><div class="rating-bar-fill h-full bg-amber-400 rounded-full" style="width: 0%;"></div></div>
+            <span class="w-10 text-right">0%</span>
+          </div>
+          <div class="rating-bar-row flex items-center gap-3">
+            <span class="w-16">1 Bintang</span>
+            <div class="rating-bar-track flex-1 h-2 rounded-full bg-teal-100 overflow-hidden"><div class="rating-bar-fill h-full bg-amber-400 rounded-full" style="width: 0%;"></div></div>
+            <span class="w-10 text-right">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-list space-y-4" id="reviews-list">
+        <div class="review-item p-6 rounded-2xl bg-white/80 backdrop-blur-md border border-teal-100 shadow-xs space-y-2.5">
+          <div class="review-header flex items-center justify-between">
+            <div class="reviewer-profile flex items-center gap-3">
+              <div class="reviewer-avatar w-10 h-10 rounded-xl bg-teal-700 text-white font-bold flex items-center justify-center text-sm shadow-sm">Y</div>
+              <div>
+                <h4 class="reviewer-name font-bold text-gray-900 text-sm flex items-center gap-1.5">
+                  Yuda Pratama 
+                  <span class="verified-badge inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 
+                    Pembeli Terverifikasi
+                  </span>
+                </h4>
+                <div class="review-stars text-amber-500 text-xs mt-0.5">★★★★★</div>
+              </div>
+            </div>
+            <span class="review-date text-xs text-gray-400">4 hari lalu</span>
+          </div>
+          <span class="review-variant-tag inline-block text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md border border-teal-100">Varian: Ukuran L</span>
+          <p class="review-text text-xs sm:text-sm text-gray-600 leading-relaxed">Suka banget sama warna hijau gelapnya, beneran keliatan mahal dan techwear banget. Dipake naik motor malam hari angin nggak tembus sama sekali, tapi pas siang nggak gerah karena furing jaringnya adem. Mantap!</p>
+        </div>
+
+        <div class="review-item p-6 rounded-2xl bg-white/80 backdrop-blur-md border border-teal-100 shadow-xs space-y-2.5">
+          <div class="review-header flex items-center justify-between">
+            <div class="reviewer-profile flex items-center gap-3">
+              <div class="reviewer-avatar w-10 h-10 rounded-xl bg-emerald-700 text-white font-bold flex items-center justify-center text-sm shadow-sm">M</div>
+              <div>
+                <h4 class="reviewer-name font-bold text-gray-900 text-sm flex items-center gap-1.5">
+                  Mega Safitri 
+                  <span class="verified-badge inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 
+                    Pembeli Terverifikasi
+                  </span>
+                </h4>
+                <div class="review-stars text-amber-500 text-xs mt-0.5">★★★★★</div>
+              </div>
+            </div>
+            <span class="review-date text-xs text-gray-400">1 minggu lalu</span>
+          </div>
+          <span class="review-variant-tag inline-block text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md border border-teal-100">Varian: Ukuran M</span>
+          <p class="review-text text-xs sm:text-sm text-gray-600 leading-relaxed">Beliin buat kado suami, ukurannya pas banget di badan. Resletingnya kedap air rapi, ada kantong saku dalam juga buat taruh HP. Packaging pengiriman aman dan cepat sampai.</p>
+        </div>
+
+        <div class="review-item p-6 rounded-2xl bg-white/80 backdrop-blur-md border border-teal-100 shadow-xs space-y-2.5">
+          <div class="review-header flex items-center justify-between">
+            <div class="reviewer-profile flex items-center gap-3">
+              <div class="reviewer-avatar w-10 h-10 rounded-xl bg-indigo-700 text-white font-bold flex items-center justify-center text-sm shadow-sm">I</div>
+              <div>
+                <h4 class="reviewer-name font-bold text-gray-900 text-sm flex items-center gap-1.5">
+                  Irfan Hakim 
+                  <span class="verified-badge inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 
+                    Pembeli Terverifikasi
+                  </span>
+                </h4>
+                <div class="review-stars text-amber-500 text-xs mt-0.5">★★★★★</div>
+              </div>
+            </div>
+            <span class="review-date text-xs text-gray-400">3 minggu lalu</span>
+          </div>
+          <span class="review-variant-tag inline-block text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md border border-teal-100">Varian: Ukuran XL</span>
+          <p class="review-text text-xs sm:text-sm text-gray-600 leading-relaxed">Bahannya taslan premium asli, kena cipratan air langsung lumer nggak merembes. Jahitannya rapi dan tali hoodie-nya kuat. Rekomen buat yang cari jaket harian.</p>
+        </div>
+      </div>
+
+      <!-- Form Tulis Ulasan -->
+      <div class="add-review-box p-6 sm:p-8 rounded-3xl bg-white/85 backdrop-blur-md border border-teal-100 shadow-sm space-y-5">
+        <div>
+          <h3 class="add-review-title text-lg font-bold text-gray-900">Tulis Ulasan Produk Anda</h3>
+          <p class="add-review-subtitle text-xs text-gray-500 mt-0.5">Bantu pembeli lain dengan membagikan ulasan jujur pengalaman Anda memakai jaket ini.</p>
+        </div>
+
+        <form id="review-form" onsubmit="handleReviewSubmit(event)" class="space-y-4">
+          <div class="form-group space-y-1.5">
+            <label class="form-label block text-xs font-bold text-gray-700 uppercase tracking-wider">Beri Rating Bintang</label>
+            <div class="star-rating-picker flex items-center gap-1 text-2xl text-amber-400 cursor-pointer select-none" id="star-picker">
+              <span class="star-pick active transition-transform hover:scale-110" data-val="1">★</span>
+              <span class="star-pick active transition-transform hover:scale-110" data-val="2">★</span>
+              <span class="star-pick active transition-transform hover:scale-110" data-val="3">★</span>
+              <span class="star-pick active transition-transform hover:scale-110" data-val="4">★</span>
+              <span class="star-pick active transition-transform hover:scale-110" data-val="5">★</span>
+            </div>
+            <input type="hidden" id="review-rating" value="5" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="form-group space-y-1">
+              <label for="review-author" class="form-label block text-xs font-bold text-gray-700">Nama Anda</label>
+              <input type="text" id="review-author" class="form-input w-full px-3.5 py-2.5 rounded-xl border border-teal-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Contoh: Yuda Pratama" required />
+            </div>
+            <div class="form-group space-y-1">
+              <label for="review-variant" class="form-label block text-xs font-bold text-gray-700">Varian / Ukuran yang Dibeli</label>
+              <input type="text" id="review-variant" class="form-input w-full px-3.5 py-2.5 rounded-xl border border-teal-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Contoh: Ukuran L" required />
+            </div>
+          </div>
+
+          <div class="form-group space-y-1">
+            <label for="review-content" class="form-label block text-xs font-bold text-gray-700">Ulasan Anda</label>
+            <textarea id="review-content" class="form-textarea w-full px-3.5 py-2.5 rounded-xl border border-teal-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 h-24 resize-none" placeholder="Ceritakan kenyamanan, ketahanan angin, dan kesan Anda terhadap jaket ini..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn py-3 px-6 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-md transition-all cursor-pointer">Kirim Ulasan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer mt-20 border-t border-teal-900/10 bg-teal-950 text-teal-100 py-12 px-4 sm:px-6 lg:px-8" id="kontak">
+    <div class="footer-content max-w-7xl mx-auto flex flex-col items-center justify-center space-y-6 text-center">
+      <p class="footer-brand text-lg font-black tracking-tight text-white flex items-center gap-2">
+        <span class="w-6 h-6 rounded-lg bg-emerald-400 text-teal-950 flex items-center justify-center text-xs font-black">B</span>
+        TOKO URBAN - Teman nyaman untuk langkah sehari-hari.
+      </p>
+      <ul class="footer-links flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm font-semibold text-teal-200">
+        <li><a href="tentang-kami.html" class="hover:text-emerald-300 transition-colors">Tentang Kami</a></li>
+        <li><a href="cara-belanja.html" class="hover:text-emerald-300 transition-colors">Cara Belanja</a></li>
+        <li><a href="faq.html" class="hover:text-emerald-300 transition-colors">FAQ</a></li>
+        <li><a href="kontak.html" class="hover:text-emerald-300 transition-colors">Kontak</a></li>
+        <li><a href="keranjang.html" class="hover:text-emerald-300 transition-colors">Keranjang Belanja</a></li>
+      </ul>
+      <p class="footer-copyright text-xs text-teal-400/70 pt-4 border-t border-teal-900 w-full">&copy; 2026 Toko Urban. Hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+  <script>
+    // Hamburger Menu Toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+
+    function toggleMenu() {
+      const isOpen = navbarMenu.classList.toggle('is-open');
+      hamburgerBtn.classList.toggle('is-active', isOpen);
+      menuOverlay.classList.toggle('is-active', isOpen);
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    }
+
+    function closeMenu() {
+      navbarMenu.classList.remove('is-open');
+      hamburgerBtn.classList.remove('is-active');
+      menuOverlay.classList.remove('is-active');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    hamburgerBtn?.addEventListener('click', toggleMenu);
+    menuOverlay?.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Interaktivitas Pilihan Ukuran
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    sizeButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        sizeButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Interaktivitas Tombol Beli Sekarang
+    const buyButton = document.querySelector('.buy-now-button');
+    buyButton?.addEventListener('click', () => {
+      const activeSize = document.querySelector('.size-btn.active')?.textContent || 'S';
+      addToCart({
+        title: 'Jaket Windbreaker Urban',
+        priceNumber: 279000,
+        priceFormatted: 'Rp279.000',
+        image: 'images/jaket-urban.jpg',
+        variant: `Ukuran ${activeSize}`
+      });
+    });
+
+    // Interaktivitas Galeri Multi-Slide Gambar Realistis
+    const mainImg = document.getElementById('gallery-main-img');
+    const thumbBtns = document.querySelectorAll('.gallery-thumb-btn');
+    const prevBtn = document.getElementById('gallery-prev-btn');
+    const nextBtn = document.getElementById('gallery-next-btn');
+    let currentSlide = 0;
+
+    function setSlide(index) {
+      if (!thumbBtns.length || !mainImg) return;
+      currentSlide = (index + thumbBtns.length) % thumbBtns.length;
+      const targetSrc = thumbBtns[currentSlide].getAttribute('data-src');
+      mainImg.style.opacity = '0';
+      setTimeout(() => {
+        mainImg.src = targetSrc;
+        mainImg.style.opacity = '1';
+      }, 150);
+      thumbBtns.forEach((btn, i) => {
+        btn.classList.toggle('is-active', i === currentSlide);
+      });
+    }
+
+    thumbBtns.forEach((btn, i) => {
+      btn.addEventListener('click', () => setSlide(i));
+    });
+
+    prevBtn?.addEventListener('click', () => setSlide(currentSlide - 1));
+    nextBtn?.addEventListener('click', () => setSlide(currentSlide + 1));
+
+    // Interaktivitas Rating Picker Form Ulasan
+    const stars = document.querySelectorAll('.star-pick');
+    const ratingInput = document.getElementById('review-rating');
+    stars.forEach((star) => {
+      star.addEventListener('click', () => {
+        const val = parseInt(star.getAttribute('data-val'), 10);
+        if (ratingInput) ratingInput.value = val;
+        stars.forEach((s) => {
+          const sVal = parseInt(s.getAttribute('data-val'), 10);
+          s.classList.toggle('active', sVal <= val);
+        });
+      });
+    });
+
+    // Handler Submit Ulasan Pelanggan
+    function handleReviewSubmit(e) {
+      e.preventDefault();
+      const author = document.getElementById('review-author').value.trim();
+      const variant = document.getElementById('review-variant').value.trim();
+      const content = document.getElementById('review-content').value.trim();
+      const rating = parseInt(document.getElementById('review-rating')?.value || '5', 10);
+      const starString = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+      const initial = author.charAt(0).toUpperCase() || 'P';
+
+      const newReview = document.createElement('div');
+      newReview.className = 'review-item p-6 rounded-2xl bg-white/80 backdrop-blur-md border border-teal-100 shadow-xs space-y-2.5';
+      newReview.innerHTML = `
+        <div class="review-header flex items-center justify-between">
+          <div class="reviewer-profile flex items-center gap-3">
+            <div class="reviewer-avatar w-10 h-10 rounded-xl bg-teal-700 text-white font-bold flex items-center justify-center text-sm shadow-sm">${initial}</div>
+            <div>
+              <h4 class="reviewer-name font-bold text-gray-900 text-sm flex items-center gap-1.5">
+                ${author} 
+                <span class="verified-badge inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 
+                  Pembeli Terverifikasi
+                </span>
+              </h4>
+              <div class="review-stars text-amber-500 text-xs mt-0.5">${starString}</div>
+            </div>
+          </div>
+          <span class="review-date text-xs text-gray-400">Baru saja</span>
+        </div>
+        <span class="review-variant-tag inline-block text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-md border border-teal-100">Varian: ${variant}</span>
+        <p class="review-text text-xs sm:text-sm text-gray-600 leading-relaxed">${content}</p>
+      `;
+
+      const list = document.getElementById('reviews-list');
+      if (list) {
+        list.insertBefore(newReview, list.firstChild);
+      }
+
+      alert(`Terima kasih atas ulasan Anda, ${author}! Ulasan Anda telah berhasil diterbitkan.`);
+      document.getElementById('review-form').reset();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | BUDARPA STORE - Toko Urban</title>
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="images/favicon-192.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body class="font-sans text-teal-950 antialiased min-h-screen relative overflow-x-hidden selection:bg-teal-200 selection:text-teal-900">
+  <!-- Running Text / Teks Pengumuman Bergerak -->
+  <div class="marquee-bar bg-gradient-to-r from-teal-800 via-teal-900 to-teal-800 text-white text-xs font-bold py-2.5 overflow-hidden whitespace-nowrap shadow-sm border-b border-teal-700/50">
+    <div class="marquee-track inline-flex items-center gap-8 whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+      <span class="marquee-item inline-flex items-center gap-2 text-emerald-300 font-semibold tracking-wide">
+        <svg class="marquee-icon w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 23c4.97 0 9-4.03 9-9 0-3.6-2.12-6.7-5.18-8.15-.36-.17-.79.03-.89.41-.33 1.25-.97 2.37-1.85 3.25-.2.2-.53.11-.6-.17-.55-2.2-1.99-4.22-3.83-5.32-.34-.2-.77.02-.82.41-.32 2.35-1.57 4.38-3.32 5.67C3.59 11.51 3 13.68 3 16c0 4.97 4.03 9 9 9z" />
+        </svg>
+        <span class="text-white">PROMO SPESIAL BULAN INI: DISKON HINGGA 30% UNTUK KOLEKSI URBAN</span>
+      </span>
+      <span class="marquee-divider text-emerald-400 font-black">•</span>
+      <span class="marquee-item inline-flex items-center gap-2 text-emerald-300 font-semibold tracking-wide">
+        <svg class="marquee-icon w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="3" width="15" height="13"></rect>
+          <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+          <circle cx="5.5" cy="18.5" r="2.5"></circle>
+          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+        </svg>
+        <span class="text-white">GRATIS ONGKIR KE SELURUH INDONESIA DENGAN MINIMAL BELANJA RP 150.000</span>
+      </span>
+      <span class="marquee-divider text-emerald-400 font-black">•</span>
+      <span class="marquee-item inline-flex items-center gap-2 text-emerald-300 font-semibold tracking-wide">
+        <svg class="marquee-icon w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+        <span class="text-white">100% PRODUK ORIGINAL &amp; BERGARANSI TUKAR 30 HARI</span>
+      </span>
+      <span class="marquee-divider text-emerald-400 font-black">•</span>
+    </div>
+  </div>
+
+  <!-- Header dan Navbar -->
+  <header class="site-header sticky top-0 z-40 backdrop-blur-md bg-white/80 border-b border-teal-900/10 transition-all duration-300 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+      <a href="index.html" class="brand-logo text-xl sm:text-2xl font-black tracking-tight text-teal-900 hover:text-teal-700 transition-colors flex items-center gap-2">
+        <span class="w-8 h-8 rounded-xl bg-gradient-to-tr from-teal-700 to-emerald-400 flex items-center justify-center text-white shadow-sm font-black text-sm">B</span>
+        BUDARPA STORE
+      </a>
+
+      <!-- Tombol Hamburger (Layar HP/Tablet) -->
+      <button class="hamburger-btn md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-xl border border-teal-200 bg-white/70 hover:bg-white text-teal-900 cursor-pointer transition-colors" id="hamburger-btn" type="button" aria-label="Buka Menu" aria-expanded="false">
+        <span class="hamburger-line w-5 h-0.5 bg-teal-900 rounded-full transition-all"></span>
+        <span class="hamburger-line w-5 h-0.5 bg-teal-900 rounded-full transition-all"></span>
+        <span class="hamburger-line w-5 h-0.5 bg-teal-900 rounded-full transition-all"></span>
+      </button>
+
+      <div class="menu-overlay fixed inset-0 bg-black/40 backdrop-blur-xs z-40 hidden" id="menu-overlay"></div>
+
+      <nav class="navbar hidden md:flex items-center gap-6" id="navbar-menu">
+        <div class="nav-right flex flex-col md:flex-row md:items-center gap-4 md:gap-6 w-full md:w-auto">
+          <ul class="nav-links flex flex-col md:flex-row items-stretch md:items-center gap-1 md:gap-1.5 font-semibold text-sm text-gray-700">
+            <li><a href="index.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Home</a></li>
+            <li><a href="index.html#produk" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Produk</a></li>
+            <li><a href="tentang-kami.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Tentang Kami</a></li>
+            <li><a href="cara-belanja.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Cara Belanja</a></li>
+            <li><a href="faq.html" class="block px-3.5 py-2 rounded-xl text-teal-800 bg-teal-50 font-bold transition-colors">FAQ</a></li>
+            <li><a href="kontak.html" class="block px-3.5 py-2 rounded-xl hover:text-teal-800 hover:bg-teal-50/70 transition-colors">Kontak</a></li>
+          </ul>
+
+          <a href="keranjang.html" class="cart-btn inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-md transition-all cursor-pointer" id="cart-btn" aria-label="Keranjang Belanja">
+            <svg class="cart-icon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span class="cart-text">Keranjang</span>
+            <span class="cart-badge bg-emerald-400 text-teal-950 font-black text-xs px-2 py-0.5 rounded-full min-w-5 text-center leading-none" id="cart-count">0</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-8">
+    <!-- Breadcrumb Navigasi -->
+    <div class="breadcrumb">
+      <a href="index.html#produk" class="back-link inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-teal-700 hover:text-teal-900 transition-colors px-3 py-1.5 rounded-lg bg-teal-50/70 hover:bg-teal-100/70 border border-teal-100">
+        <svg class="back-arrow-icon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Kembali ke Katalog Utama</span>
+      </a>
+    </div>
+
+    <!-- Subpage Hero Banner -->
+    <section class="subpage-hero relative overflow-hidden rounded-3xl bg-gradient-to-br from-teal-800 via-teal-900 to-emerald-950 text-white p-6 sm:p-10 shadow-lg border border-teal-500/20 space-y-2">
+      <p class="subpage-hero-label text-emerald-300 text-xs font-black uppercase tracking-widest">PUSAT BANTUAN</p>
+      <h1 class="subpage-hero-title text-2xl sm:text-3xl font-black tracking-tight text-white">Pertanyaan Sering Diajukan (FAQ)</h1>
+      <p class="subpage-hero-desc text-teal-100/80 text-xs sm:text-sm max-w-2xl leading-relaxed">
+        Temukan jawaban lengkap dan transparan seputar produk, keaslian bahan, pengiriman, garansi tukar, dan metode transaksi di Toko Urban.
+      </p>
+    </section>
+
+    <!-- FAQ Accordions -->
+    <section class="faq-section space-y-8">
+      <div class="faq-container max-w-3xl mx-auto space-y-4">
+        <!-- FAQ 1 -->
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer" open>
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm sm:text-base select-none list-none">
+            <span>Apakah seluruh produk di Toko Urban dijamin 100% original?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Ya, 100% original. Seluruh produk (sepatu, tas ransel, jaket, dan jam tangan) diproduksi secara langsung dengan standar kendali mutu ketat (<em>Quality Control</em>) sebelum dikirimkan kepada pelanggan.
+          </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm sm:text-base select-none list-none">
+            <span>Berapa lama estimasi pengiriman pesanan sampai ke alamat saya?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Pesanan Anda diproses dalam 1x24 jam kerja. Estimasi pengiriman wilayah Jabodetabek &amp; Bali adalah 1-2 hari kerja, Pulau Jawa 2-3 hari kerja, dan luar Pulau Jawa 3-5 hari kerja melalui kurir J&amp;T, SiCepat, atau JNE.
+          </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm sm:text-base select-none list-none">
+            <span>Bagaimana syarat dan cara tukar ukuran (Garansi 30 Hari)?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Apabila ukuran sepatu atau jaket yang Anda terima kurang pas, Anda dapat menukarnya dalam waktu 30 hari sejak barang diterima. Pastikan produk belum dipakai ke luar rumah, tag label belum dicopot, dan kotak kemasan masih dalam keadaan baik. Cukup hubungi admin WhatsApp kami untuk dipandu penukarannya.
+          </p>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm sm:text-base select-none list-none">
+            <span>Bagaimana cara mendapatkan promo Gratis Ongkir?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Promo Gratis Ongkir berlaku otomatis di seluruh Indonesia saat total belanja Anda di Keranjang mencapai minimal Rp 150.000. Tidak diperlukan klaim kupon manual.
+          </p>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm sm:text-base select-none list-none">
+            <span>Metode pembayaran apa saja yang diterima? Apakah bisa COD?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Kami menerima pembayaran instan QRIS (GoPay, OVO, ShopeePay, DANA), Transfer Virtual Account Bank (BCA, Mandiri, BRI, BNI), serta layanan Bayar di Tempat (COD) untuk memudahkan Anda bertransaksi tanpa rasa khawatir.
+          </p>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="faq-item group bg-white/80 backdrop-blur-sm rounded-2xl border border-teal-100 p-5 shadow-xs transition-all open:bg-white open:shadow-md cursor-pointer">
+          <summary class="faq-question flex items-center justify-between gap-4 font-bold text-gray-900 text-sm sm:text-base select-none list-none">
+            <span>Bagaimana cara merawat sepatu kanvas dan tas ransel agar awet?</span>
+            <span class="faq-icon-wrap w-7 h-7 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <p class="faq-answer mt-3 pt-3 border-t border-teal-50 text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Untuk sepatu kanvas, bersihkan debu dengan sikat halus dan gunakan sabun khusus sepatu; hindari merendam sepatu di dalam air panas. Untuk tas ransel dan jaket windbreaker, lap permukaan dengan kain microfiber lembap dan angin-anginkan di tempat teduh tanpa paparan sinar matahari terik langsung.
+          </p>
+        </details>
+      </div>
+
+      <!-- Kotak Bantuan Ekstra -->
+      <div class="about-banner bg-white/75 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-teal-100/90 shadow-sm space-y-4 text-center max-w-3xl mx-auto">
+        <h3 class="text-xl sm:text-2xl font-black text-gray-900">Masih Punya Pertanyaan Lain?</h3>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-lg mx-auto">
+          Tim Customer Support kami siap menjawab semua pertanyaan Anda dengan sigap setiap hari pukul 08.00 - 21.00 WIB.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <a href="kontak.html" class="hero-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-md transition-all cursor-pointer">
+            <span>Halaman Kontak Kami</span>
+          </a>
+          <a href="https://wa.me/6281234567890?text=Halo%20Toko%20Urban%2C%20saya%20ingin%20bertanya" target="_blank" rel="noopener noreferrer" class="whatsapp-direct-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-all cursor-pointer">
+            <span>Chat WhatsApp CS</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer mt-20 border-t border-teal-900/10 bg-teal-950 text-teal-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="footer-content max-w-7xl mx-auto flex flex-col items-center justify-center space-y-6 text-center">
+      <p class="footer-brand text-lg font-black tracking-tight text-white flex items-center gap-2">
+        <span class="w-6 h-6 rounded-lg bg-emerald-400 text-teal-950 flex items-center justify-center text-xs font-black">B</span>
+        BUDARPA STORE - Toko Online Terbaik
+      </p>
+      <ul class="footer-links flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm font-semibold text-teal-200">
+        <li><a href="tentang-kami.html" class="hover:text-emerald-300 transition-colors">Tentang Kami</a></li>
+        <li><a href="cara-belanja.html" class="hover:text-emerald-300 transition-colors">Cara Belanja</a></li>
+        <li><a href="faq.html" class="hover:text-emerald-300 transition-colors">FAQ</a></li>
+        <li><a href="kontak.html" class="hover:text-emerald-300 transition-colors">Kontak</a></li>
+        <li><a href="keranjang.html" class="hover:text-emerald-300 transition-colors">Keranjang Belanja</a></li>
+      </ul>
+      <p class="footer-copyright text-xs text-teal-400/70 pt-4 border-t border-teal-900 w-full">&copy; 2026 Toko Urban. Hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+  <script>
+    // Hamburger Menu Toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navbarMenu = document.getElementById('navbar-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+
+    function toggleMenu() {
+      const isOpen = navbarMenu.classList.toggle('is-open');
+      hamburgerBtn.classList.toggle('is-active', isOpen);
+      menuOverlay.classList.toggle('is-active', isOpen);
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    }
+
+    function closeMenu() {
+      navbarMenu.classList.remove('is-open');
+      hamburgerBtn.classList.remove('is-active');
+      menuOverlay.classList.remove('is-active');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    hamburgerBtn?.addEventListener('click', toggleMenu);
+    menuOverlay?.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  </script>
+</body>
+
+</html>
